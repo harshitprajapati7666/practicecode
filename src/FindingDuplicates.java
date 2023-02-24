@@ -3,7 +3,7 @@ import java.util.HashSet;
 public class FindingDuplicates {
     public void findDuplicates(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] == arr[j]) {
                     System.out.println("Element " + arr[i] + " is duplicate.");
                 }
