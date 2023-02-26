@@ -25,9 +25,14 @@ public class FindingDuplicates {
 
     public void findDuplicatesWIthOnlyForLoop(int[] arr) {
         Arrays.sort(arr);
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 1; i < arr.length - 2; i++) {
+            if (arr[i - 1] == arr[i]) {
+                System.out.println("Element " + arr[i] + " is duplicate");
+                i++;
+            }
             if (arr[i] == arr[i + 1]) {
                 System.out.println("Element " + arr[i] + " is duplicate");
+                i++;
             }
         }
     }
