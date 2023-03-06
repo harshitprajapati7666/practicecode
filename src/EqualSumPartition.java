@@ -1,4 +1,5 @@
 public class EqualSumPartition {
+
     public int findArraySum(int[] arr) {
         int totalSum = 0;
         for (int i : arr) {
